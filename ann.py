@@ -71,7 +71,6 @@ df = pd.read_csv(
     encoding="latin1"
 )
 
-# Convert Ram and Weight exactly like training
 df["Ram"] = df["Ram"].str.replace("GB", "").astype(int)
 df["Weight"] = df["Weight"].str.replace("kg", "").astype(float)
 
